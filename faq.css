@@ -1,0 +1,79 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family:'Figtree', worksans, 'roboto', sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.5;
+}
+
+:root{
+    --color-background:hsl(47, 88%, 63%);}
+    
+/*faq-accordion*/
+.faq-accordion{
+    background-image: url(images/background-pattern-mobile.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100dvw ;
+    background-color: hsl(275, 100%, 97%);
+    padding: 15rem 3rem;
+   
+}
+.faq__card{
+    background: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 3rem;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+.faq__header{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.faq__minus{
+    color: hsl(292, 42%, 14%);
+}
+.header__icon{
+    width: 30px;
+    height:30px;
+   
+}
+
+.faq__heading{
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.faq__content .faq__list{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.list__header{
+    font-size: 2rem;
+}
+.faq__text{
+    color: hsl(292, 16%, 49%);
+}
+.faq__content .faq__text{
+    opacity: 0;
+    max-height: 0;
+}
+.faq__expanded .faq__text{
+    opacity: 1;
+    max-height: 100vh;
+
+}
+@media screen and (min-width:768px) {
+    .faq-accordion{
+        background-image: url(images/background-pattern-desktop.svg);
+    }
+    .faq__card{
+        max-width: 50vw;
+        max-height: fit-content;
+        margin: 0 auto;
+    }
+}
